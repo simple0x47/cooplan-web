@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage;
+
+        if (userLang.includes("en")) {
+            location.href = window.location.href + '/en';
+        } else if (userLang.includes("es")) {
+            location.href = window.location.href + '/es';
+        } else if (userLang.includes("ro")) {
+            location.href = window.location.href + '/ro';
+        } else {
+            location.href = window.location.href + '/en';
+        }
+    </script>
+</body>
+
+</html>
